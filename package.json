@@ -1,0 +1,28 @@
+{
+  "name": "@creator-splits/rules-engine",
+  "version": "1.0.0",
+  "description": "Deposit-matching and charge-calculation rules for creator split platforms",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5",
+    "vitest": "^5.0.2"
+  },
+  "license": "MIT"
+}
